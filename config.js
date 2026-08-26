@@ -1,17 +1,21 @@
 // Portfolio Configuration Data
 const PORTFOLIO_CONFIG = {
   profile: {
-    name: "Alex Morgan",
-    roles: ["Creative Developer", "UI/UX Engineer", "Web Specialist"],
-    subheading: "Crafting modern, immersive digital experiences with clean code and premium aesthetics.",
-    bio: "I am a frontend developer and UI/UX designer specializing in building responsive, highly interactive, and visually stunning web applications. I focus on combining cutting-edge performance with premium, tailored design systems.",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?fit=crop&w=400&h=400&q=80",
-    location: "San Francisco, CA",
-    email: "alex@morgan.dev",
+    name: "Youssef Tamer",
+    roles: [
+      "Kotlin & Flutter Developer",
+      "Android Developer",
+      "Data Engineering Enthusiast"
+    ],
+    subheading: "I thrive on building scalable mobile applications and have a keen interest in Data Engineering.",
+    bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen interest in Data Engineering.",
+    avatar: "./avatar.jpg",
+    location: "Sinai, Egypt",
+    email: "yousseftamer951@gmail.com",
     resume: "#",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "https://github.com/tayson202",
+      linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248",
       twitter: "https://twitter.com",
       dribbble: "https://dribbble.com"
     }

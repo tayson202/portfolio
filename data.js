@@ -20,8 +20,8 @@ const PORTFOLIO_DATA = {
     email: "yousseftamer951@gmail.com",
     phone: "01203598649",
     whatsapp: "https://wa.me/201203598649", // Direct wa.me Egyptian code
-    github: "https://github.com",
-    linkedin: "https://linkedin.com/in/youssef-tamer-169827248",
+    github: "https://github.com/tayson202",
+    linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248",
     location: "Sinai, Egypt"
   },
   focus: [
@@ -67,8 +67,8 @@ const PORTFOLIO_DATA = {
       category: "Android & Mobile Development",
       description: "A modern news application featuring offline local caching, clean MVVM separation, and asynchronous networking.",
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?fit=crop&w=600&h=400&q=80",
-      github: "https://github.com",
-      live: "https://github.com",
+      github: "https://github.com/tayson202",
+      live: "https://github.com/tayson202",
       tags: ["Kotlin", "Jetpack Compose", "Room DB", "Retrofit"],
       details: {
         problem: "Users needed a reliable news feed that retains articles offline and loads feeds dynamically without UI freezes on sluggish networks.",
@@ -82,7 +82,7 @@ const PORTFOLIO_DATA = {
       category: "Android & Mobile Development",
       description: "A native tracking application supporting calorie math, workout session logging, and interactive metrics.",
       image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?fit=crop&w=600&h=400&q=80",
-      github: "https://github.com",
+      github: "https://github.com/tayson202",
       live: "#",
       tags: ["Kotlin", "MVVM Pattern", "Jetpack Compose"],
       details: {
@@ -97,7 +97,7 @@ const PORTFOLIO_DATA = {
       category: "Android & Mobile Development",
       description: "A hardware-integrated application allowing recording, saving, and smooth audio/video multimedia playback.",
       image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?fit=crop&w=600&h=400&q=80",
-      github: "https://github.com",
+      github: "https://github.com/tayson202",
       live: "#",
       tags: ["Kotlin", "Media Recorder API", "Android SDK"],
       details: {
