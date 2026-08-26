@@ -8,7 +8,7 @@ const PORTFOLIO_DATA = {
       "Data Engineering Enthusiast"
     ],
     bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen interest in Data Engineering.",
-    avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?fit=crop&w=400&h=400&q=80", // Premium stock male developer profile
+    avatar: "./avatar.jpg",
     resumeUrl: "#",
     stats: [
       { label: "Completed Projects", value: "5+" },
