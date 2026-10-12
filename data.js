@@ -11,7 +11,7 @@ const PORTFOLIO_DATA = {
     avatar: "./avatar.jpg",
     resumeUrl: "#",
     stats: [
-      { label: "Completed Projects", value: "5+" },
+      { label: "Completed Projects", value: "6+" },
       { label: "Internships Completed", value: "2" },
       { label: "Languages Spoken", value: "2" }
     ]
@@ -78,17 +78,24 @@ const PORTFOLIO_DATA = {
     },
     {
       id: 2,
-      title: "Android Fitness Application",
+      title: "Gym Unity — Fitness & Wellness Platform",
       category: "Android & Mobile Development",
-      description: "A native tracking application supporting calorie math, workout session logging, and interactive metrics.",
-      image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?fit=crop&w=600&h=400&q=80",
+      description: "A comprehensive Flutter fitness platform featuring a Coach Marketplace, AI-powered TAIYO coaching assistant, in-app product store, nutrition tracking, weekly check-ins, and progress mapping — all wrapped in a premium minimal UI.",
+      image: "./gymunity_4.jpg",
+      images: [
+        "./gymunity_4.jpg",
+        "./gymunity_1.jpg",
+        "./gymunity_2.jpg",
+        "./gymunity_3.jpg",
+        "./gymunity_5.jpg"
+      ],
       github: "https://github.com/tayson202",
       live: "#",
-      tags: ["Kotlin", "MVVM Pattern", "Jetpack Compose"],
+      tags: ["Flutter", "Dart", "Firebase", "MVVM", "AI Coaching"],
       details: {
-        problem: "Fitness trackers often suffer from layout bloating and complex inputs, which discourages daily log updates.",
-        solution: "Created single-tap log screens using Jetpack Compose state mapping, standardizing data updates through a central repository layer.",
-        impact: "Achieved seamless UI flow at 60fps, simplifying calculations and reducing typical log times to under 5 seconds."
+        problem: "Fitness apps are often cluttered, overwhelming, and fail to connect users with the right coaches or provide holistic wellness guidance — leading to low engagement and poor habit formation.",
+        solution: "Built Gym Unity with Flutter featuring a curated Coach Marketplace (HIIT, Strength, Yoga, Nutrition, CrossFit), an AI coaching assistant (TAIYO) for daily guidance, a verified GymUnity Store with persistent cart, nutrition and hydration tracking, weekly check-ins, and a transformation progress map — all with a clean, low-noise design.",
+        impact: "Delivered a full wellness ecosystem in a single app with 9-day active streak tracking, premium member tiers, real-time coach browsing by specialty and city, and TAIYO-powered personalized store picks — significantly improving user engagement and retention."
       }
     },
     {
@@ -104,6 +111,27 @@ const PORTFOLIO_DATA = {
         problem: "Capturing high-resolution media asynchronously can cause buffer overflows and main-thread delays on budget devices.",
         solution: "Engineered audio and video recorder configurations that output compressed file payloads and run on background worker threads.",
         impact: "Integrated safe record and play routines, preventing frame-drop anomalies and eliminating system block crashes."
+      }
+    },
+    {
+      id: 4,
+      title: "DBLKK — Egyptian Streetwear Platform",
+      category: "Web Development",
+      description: "A premium Egyptian fashion & athletic lifestyle brand platform. Built with Next.js featuring a full e-commerce store, run community events (Four Fridays Tour), gym gear section, and dark-mode UI with burgundy branding.",
+      image: "./dblkk_1.png",
+      images: [
+        "./dblkk_1.png",
+        "./dblkk_2.png",
+        "./dblkk_3.png",
+        "./dblkk_4.png"
+      ],
+      github: "https://github.com/tayson202",
+      live: "https://dblkk-eg.vercel.app/",
+      tags: ["Next.js", "React", "Tailwind CSS", "Vercel", "E-Commerce"],
+      details: {
+        problem: "DBLKK needed a high-performance, brand-forward web platform that could serve both as a premium e-commerce store for Egyptian streetwear and as a community hub for their Four Fridays run club events.",
+        solution: "Built a full-stack Next.js platform with dark/light theme support, animated hero sections, a product store (DROP 01), community events calendar, gym gear section, COD checkout, and order tracking — all deployed on Vercel.",
+        impact: "Delivered a premium, mobile-first storefront and community platform that elevated the DBLKK brand identity online, supporting product launches, run club registrations, and athletic community growth across Cairo, Alexandria, and Ismailia."
       }
     }
   ],
