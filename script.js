@@ -526,8 +526,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let isDeleting = false;
     let textState = '';
 
+    const formatRoleText = (role) => {
+      if (/^(a|an)\s+/i.test(role)) return role;
+      const article = /^[aeiou]/i.test(role) ? 'an ' : 'a ';
+      return article + role;
+    };
+
     const typeAnimation = () => {
-      const fullText = data.profile.roles[roleIdx];
+      const fullText = formatRoleText(data.profile.roles[roleIdx]);
       
       if (isDeleting) {
         textState = fullText.substring(0, charIdx - 1);
@@ -691,6 +697,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalTitle = document.getElementById('modal-project-title');
   const modalImage = document.getElementById('modal-project-img');
   const modalTags = document.getElementById('modal-project-tags');
+  const modalThumbnails = document.getElementById('modal-thumbnails');
   const modalGithub = document.getElementById('modal-link-github');
   const modalLive = document.getElementById('modal-link-live');
   
@@ -702,6 +709,25 @@ document.addEventListener('DOMContentLoaded', () => {
     modalTitle.textContent = project.title;
     modalImage.src = project.image;
     modalImage.alt = project.title;
+    
+    // Render thumbnails if multiple images are provided
+    if (modalThumbnails) {
+      modalThumbnails.innerHTML = '';
+      const imageList = project.images && project.images.length > 0 ? project.images : [project.image];
+      if (imageList.length > 1) {
+        imageList.forEach((imgSrc, idx) => {
+          const thumb = document.createElement('div');
+          thumb.className = `modal-thumb ${idx === 0 ? 'active' : ''}`;
+          thumb.innerHTML = `<img src="${imgSrc}" alt="${project.title} screenshot ${idx + 1}" loading="lazy">`;
+          thumb.addEventListener('click', () => {
+            modalThumbnails.querySelectorAll('.modal-thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+            modalImage.src = imgSrc;
+          });
+          modalThumbnails.appendChild(thumb);
+        });
+      }
+    }
     
     modalTags.innerHTML = project.tags.map(t => `<span class="project-tag">${t}</span>`).join('');
     

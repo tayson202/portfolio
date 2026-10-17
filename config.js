@@ -3,12 +3,12 @@ const PORTFOLIO_CONFIG = {
   profile: {
     name: "Youssef Tamer",
     roles: [
-      "Kotlin & Flutter Developer",
+      "AI-Native Developer",
       "Android Developer",
-      "Data Engineering Enthusiast"
+      "Kotlin & Flutter Developer"
     ],
-    subheading: "I thrive on building scalable mobile applications and have a keen interest in Data Engineering.",
-    bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen interest in Data Engineering.",
+    subheading: "I thrive on building scalable mobile applications and have a keen passion for AI-Native Development.",
+    bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen passion for AI-Native Development.",
     avatar: "./avatar.jpg",
     location: "Sinai, Egypt",
     email: "yousseftamer951@gmail.com",
@@ -38,13 +38,13 @@ const PORTFOLIO_CONFIG = {
   projects: [
     {
       id: 1,
-      title: "Nebula Analytics Dashboard",
-      description: "A premium real-time data streaming analytics suite featuring customizable widgets, glassmorphism UI widgets, and multi-axis performance charts.",
-      category: "Frontend",
-      tags: ["HTML5/CSS3", "JavaScript", "ChartJS"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=600&h=400&q=80",
-      demoUrl: "#",
-      githubUrl: "#"
+      title: "OmniDoc & Resume AI — Universal AI Document & Career Studio",
+      description: "Universal AI-powered document workspace for PDF, Word, Excel, and PowerPoint, featuring interactive RAG AI Chat with page citations, automated summaries, AI study suite, and ATS resume studio.",
+      category: "AI & Web",
+      tags: ["FastAPI", "Python", "Flutter", "pgvector", "OpenAI"],
+      image: "./omnidoc_1.png",
+      demoUrl: "https://tayson202.github.io/pdf-assist/",
+      githubUrl: "https://github.com/tayson202/pdf-assist"
     },
     {
       id: 2,

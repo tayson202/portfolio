@@ -3,15 +3,15 @@ const PORTFOLIO_DATA = {
   profile: {
     name: "Youssef Tamer",
     roles: [
-      "Kotlin & Flutter Developer",
+      "AI-Native Developer",
       "Android Developer",
-      "Data Engineering Enthusiast"
+      "Kotlin & Flutter Developer"
     ],
-    bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen interest in Data Engineering.",
+    bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen passion for AI-native development.",
     avatar: "./avatar.jpg",
     resumeUrl: "#",
     stats: [
-      { label: "Completed Projects", value: "6+" },
+      { label: "Completed Projects", value: "7+" },
       { label: "Internships Completed", value: "2" },
       { label: "Languages Spoken", value: "2" }
     ]
@@ -22,7 +22,7 @@ const PORTFOLIO_DATA = {
     whatsapp: "https://wa.me/201203598649", // Direct wa.me Egyptian code
     github: "https://github.com/tayson202",
     linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248",
-    location: "Sinai, Egypt"
+    location: "ismailia, Egypt"
   },
   focus: [
     {
@@ -36,9 +36,9 @@ const PORTFOLIO_DATA = {
       icon: "fa-solid fa-mobile-screen"
     },
     {
-      title: "Data Engineering",
-      desc: "Designing and developing ETL pipelines, processing data collections, and working with Python, SQL, and database systems.",
-      icon: "fa-solid fa-database"
+      title: "AI-Native Development",
+      desc: "Architecting intelligent applications, integrating LLMs, generative AI APIs, and autonomous workflows.",
+      icon: "fa-solid fa-brain"
     }
   ],
   skills: {
@@ -54,15 +54,37 @@ const PORTFOLIO_DATA = {
       { name: "Room Database (SQLite)", level: 80, icon: "fa-solid fa-database" },
       { name: "Dagger Dependency Injection", level: 70, icon: "fa-solid fa-syringe" }
     ],
-    "Data Engineering & Tools": [
-      { name: "Python Programming", level: 80, icon: "fa-brands fa-python" },
-      { name: "SQL & Relational Databases", level: 85, icon: "fa-solid fa-database" },
-      { name: "ETL Pipelines & Processing", level: 75, icon: "fa-solid fa-gears" }
+    "AI & Data Tools": [
+      { name: "Python Programming", level: 85, icon: "fa-brands fa-python" },
+      { name: "LLM & AI APIs Integration", level: 80, icon: "fa-solid fa-brain" },
+      { name: "SQL & Relational Databases", level: 85, icon: "fa-solid fa-database" }
     ]
   },
   projects: [
     {
       id: 1,
+      title: "OmniDoc & Resume AI — Universal AI Document & Career Studio",
+      category: "AI & Web Development",
+      description: "An enterprise-grade AI document intelligence & career platform. Features multi-format parsing (PDF, Word, Excel, PPT), interactive RAG AI Chat with verified page citations, automated multi-level document summarization, AI Study Suite (3D flashcards, quizzes & Feynman explainer), 10+ language neural translation, and an ATS-optimized resume builder with 1-click export.",
+      image: "./omnidoc_1.png",
+      images: [
+        "./omnidoc_1.png",
+        "./omnidoc_2.png",
+        "./omnidoc_3.png",
+        "./omnidoc_4.png",
+        "./omnidoc_5.png"
+      ],
+      github: "https://github.com/tayson202/pdf-assist",
+      live: "https://tayson202.github.io/pdf-assist/",
+      tags: ["AI / RAG", "FastAPI", "Python", "Flutter", "pgvector", "PostgreSQL", "OpenAI"],
+      details: {
+        problem: "Professionals and students struggle to quickly extract insights, synthesize knowledge, and navigate dense multi-format documents (PDF, Word, Excel, PowerPoint) while verifying factual grounding without hallucinations or manual cross-referencing.",
+        solution: "Architected OmniDoc & Resume: an end-to-end AI document ecosystem combining FastAPI, PyMuPDF, and pgvector cosine retrieval with sliding-window chunking, grounded LLM prompts with exact page-level citations, an interactive AI Study Suite with 3D flashcards and Feynman learning models, multi-language neural translation, and an ATS resume studio.",
+        impact: "Deployed live web application and full-stack Flutter client with 100% automated test coverage across authentication, cross-tenant isolation, OCR detection guards, and deep-link citation jumps directly into document reader pages."
+      }
+    },
+    {
+      id: 2,
       title: "News App",
       category: "Android & Mobile Development",
       description: "A modern news application featuring offline local caching, clean MVVM separation, and asynchronous networking.",
