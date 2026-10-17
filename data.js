@@ -7,7 +7,7 @@ const PORTFOLIO_DATA = {
       "Android Developer",
       "Kotlin & Flutter Developer"
     ],
-    bio: "I am a Computer Science student at Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen passion for AI-native development.",
+    bio: "I am a Computer Science graduate from Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen passion for AI-native development.",
     avatar: "./avatar.jpg",
     resumeUrl: "#",
     stats: [
