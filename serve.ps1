@@ -33,6 +33,7 @@ try {
                 ".jpg"  { $contentType = "image/jpeg" }
                 ".jpeg" { $contentType = "image/jpeg" }
                 ".svg"  { $contentType = "image/svg+xml" }
+                ".pdf"  { $contentType = "application/pdf" }
                 ".json" { $contentType = "application/json" }
             }
             
