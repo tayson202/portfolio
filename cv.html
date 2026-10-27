@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youssef Tamer - CV / Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1d63b8;
+      --primary-hover: #154c8f;
+      --text-dark: #111827;
+      --text-muted: #374151;
+      --border-dark: #111827;
+      --border-light: #e5e7eb;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f3f4f6;
+      color: var(--text-dark);
+      line-height: 1.4;
+      font-size: 11.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Floating action toolbar for web view */
+    .action-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #1e293b;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background: #334155;
+      color: #e2e8f0;
+    }
+
+    .btn-secondary:hover {
+      background: #475569;
+    }
+
+    /* CV Document Container */
+    .page-container {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 24px auto;
+      background: #ffffff;
+      padding: 20mm 18mm;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    /* Header Section */
+    .cv-header {
+      margin-bottom: 14px;
+    }
+
+    .cv-name {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .cv-subtitle {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .cv-contact .sep {
+      color: #9ca3af;
+    }
+
+    .cv-contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .cv-contact a:hover {
+      text-decoration: underline;
+    }
+
+    .cv-contact i {
+      font-size: 11px;
+      margin-right: 2px;
+      color: var(--text-dark);
+    }
+
+    .cv-icon {
+      display: inline-block;
+      vertical-align: -1.5px;
+      margin-right: 4px;
+      color: var(--text-dark);
+    }
+
+    /* Two-Column Grid */
+    .cv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 22px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-dark);
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid var(--border-dark);
+      margin-bottom: 7px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 11px;
+      line-height: 1.45;
+      color: var(--text-muted);
+      text-align: justify;
+    }
+
+    /* Experience Items */
+    .exp-item {
+      margin-bottom: 8px;
+    }
+
+    .exp-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .item-meta {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 3px;
+    }
+
+    .item-bullets {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .item-bullets li {
+      position: relative;
+      padding-left: 11px;
+      font-size: 11px;
+      line-height: 1.4;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .item-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    /* Education */
+    .edu-item {
+      margin-bottom: 4px;
+    }
+
+    /* Certifications & Languages & Interests */
+    .simple-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .simple-list li {
+      font-size: 11px;
+      line-height: 1.45;
+      color: var(--text-muted);
+      margin-bottom: 2.5px;
+    }
+
+    .simple-list li strong {
+      color: var(--text-dark);
+    }
+
+    /* Key Achievements */
+    .subheading {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 3px;
+    }
+
+    .achievement-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievement-list li {
+      position: relative;
+      padding-left: 11px;
+      font-size: 11px;
+      line-height: 1.45;
+      color: var(--text-dark);
+      margin-bottom: 2.5px;
+    }
+
+    .achievement-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    .achievement-list a, .proj-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 10.5px;
+      font-weight: 600;
+      margin-left: 4px;
+    }
+
+    .achievement-list a:hover, .proj-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Skills List */
+    .skills-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li {
+      position: relative;
+      padding-left: 11px;
+      font-size: 11px;
+      line-height: 1.38;
+      color: var(--text-dark);
+    }
+
+    .skills-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    /* Projects */
+    .proj-item {
+      margin-bottom: 6.5px;
+    }
+
+    .proj-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .proj-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .proj-desc {
+      font-size: 10.5px;
+      color: var(--text-muted);
+      line-height: 1.35;
+      margin: 1px 0 2px 0;
+    }
+
+    .proj-links {
+      font-size: 10.5px;
+    }
+
+    .proj-links .sep {
+      color: #9ca3af;
+      margin: 0 4px;
+    }
+
+    /* Print media styles */
+    @media print {
+      body {
+        background: #ffffff;
+        font-size: 10.5pt;
+      }
+
+      .action-toolbar {
+        display: none !important;
+      }
+
+      .page-container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 12mm 14mm !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Toolbar -->
+  <div class="action-toolbar">
+    <button class="action-btn btn-primary" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+    <a href="Youssef_Tamer_CV.pdf" class="action-btn btn-primary" download="Youssef_Tamer_CV.pdf">
+      <i class="fa-solid fa-download"></i> Download PDF
+    </a>
+    <a href="index.html" class="action-btn btn-secondary">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+  </div>
+
+  <div class="page-container">
+    <!-- Header -->
+    <header class="cv-header">
+      <h1 class="cv-name">Youssef Tamer</h1>
+      <div class="cv-subtitle">Software Developer | Flutter & Android (Kotlin) | AI Native</div>
+      <div class="cv-contact">
+        <span><svg class="cv-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>01203598649</span>
+        <span class="sep">|</span>
+        <span><svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><a href="mailto:yousseftamer951@gmail.com" style="color: inherit; text-decoration: none;">yousseftamer951@gmail.com</a></span>
+        <span class="sep">|</span>
+        <span><svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg><a href="https://www.linkedin.com/in/youssef-tamer-169827248" target="_blank">LinkedIn</a></span>
+        <span class="sep">|</span>
+        <span><a href="index.html" target="_blank">Portfolio</a></span>
+      </div>
+    </header>
+
+    <!-- Two-Column Layout -->
+    <div class="cv-grid">
+      <!-- Left Column -->
+      <div class="column">
+        <!-- Summary -->
+        <section>
+          <h2 class="section-title">Summary</h2>
+          <p class="summary-text">
+            Computer Science graduate from Sinai University with experience in Android development using Kotlin and Jetpack Compose, plus Flutter for cross-platform apps. Experienced in AI-native development and vibe coding for web and mobile, focused on building modern, scalable, AI-powered software.
+          </p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+          <h2 class="section-title">Experience</h2>
+          
+          <div class="exp-item">
+            <div class="item-title">Android Developer Intern</div>
+            <div class="item-meta">DEPI | 11/2024 - 05/2025</div>
+            <ul class="item-bullets">
+              <li>Developed a News App using Kotlin and Jetpack Compose</li>
+              <li>Integrated Retrofit and Room Database</li>
+              <li>Used MVVM architecture and Dagger</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="item-title">Data Engineer Intern</div>
+            <div class="item-meta">ITI | 08/2025 - 09/2025</div>
+            <ul class="item-bullets">
+              <li>Trained in Python, SQL, ETL pipelines</li>
+              <li>Worked on data processing concepts</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+          <h2 class="section-title">Education</h2>
+          <div class="edu-item">
+            <div class="item-title">Bachelor of Computer Science</div>
+            <div class="item-meta">Sinai University | 09/2022 - 06/2026</div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+          <h2 class="section-title">Certifications</h2>
+          <ul class="simple-list">
+            <li>Data Engineering Track - DataCamp</li>
+            <li>Flutter Development Course - Udemy</li>
+            <li>DEPI Mobile Development Program</li>
+          </ul>
+        </section>
+
+        <!-- Languages -->
+        <section>
+          <h2 class="section-title">Languages</h2>
+          <ul class="simple-list">
+            <li><strong>Arabic:</strong> Native</li>
+            <li><strong>English:</strong> Advanced</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column">
+        <!-- Key Achievements -->
+        <section>
+          <h2 class="section-title">Key Achievements</h2>
+          <div class="subheading">Deployed Web Projects</div>
+          <ul class="achievement-list">
+            <li><strong>DBLKK Website</strong> <a href="https://dblkk-eg.vercel.app/" target="_blank">View Website</a></li>
+            <li><strong>OmniDoc Website</strong> <a href="https://tayson202.github.io/pdf-assist/" target="_blank">View Website</a></li>
+            <li><strong>3M Dahab Website</strong> <a href="https://jewelry-management-system-backend.vercel.app" target="_blank">View Website</a></li>
+          </ul>
+        </section>
+
+        <!-- Skills -->
+        <section>
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills-list">
+            <li>Kotlin</li>
+            <li>Flutter</li>
+            <li>Jetpack</li>
+            <li>MVVM</li>
+            <li>Retrofit</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>ETL</li>
+            <li>Java</li>
+            <li>REST APIs</li>
+          </ul>
+        </section>
+
+        <!-- Projects -->
+        <section>
+          <h2 class="section-title">Projects</h2>
+
+          <div class="proj-item">
+            <div class="proj-title">Gym Unity App</div>
+            <p class="proj-desc">Fitness marketplace for gym products, coaches and brands.</p>
+            <div class="proj-links">
+              <a href="https://github.com/tayson202" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">Store App</div>
+            <p class="proj-desc">E-commerce app for browsing and buying products.</p>
+            <div class="proj-links">
+              <a href="https://github.com/tayson202" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">Delivery App</div>
+            <p class="proj-desc">App for ordering and tracking deliveries.</p>
+            <div class="proj-links">
+              <a href="https://github.com/tayson202" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">DBLKK Website</div>
+            <p class="proj-desc">Website for the DBLKK platform.</p>
+            <div class="proj-links">
+              <a href="https://dblkk-eg.vercel.app/" target="_blank">Website</a>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">OmniDoc</div>
+            <p class="proj-desc">PDF assistant for managing and processing documents.</p>
+            <div class="proj-links">
+              <a href="https://github.com/tayson202/pdf-assist" target="_blank">GitHub</a>
+              <span class="sep">|</span>
+              <a href="https://tayson202.github.io/pdf-assist/" target="_blank">Website</a>
+            </div>
+          </div>
+
+          <div class="proj-item">
+            <div class="proj-title">3M Dahab Website</div>
+            <p class="proj-desc">Jewelry management system website.</p>
+            <div class="proj-links">
+              <a href="https://github.com/tayson202" target="_blank">GitHub</a>
+              <span class="sep">|</span>
+              <a href="https://jewelry-management-system-backend.vercel.app" target="_blank">Website</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interests -->
+        <section>
+          <h2 class="section-title">Interests</h2>
+          <p class="summary-text">Programming and Development</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

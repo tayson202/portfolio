@@ -3,13 +3,13 @@ const PORTFOLIO_DATA = {
   profile: {
     name: "Youssef Tamer",
     roles: [
-      "AI-Native Developer",
-      "Android Developer",
-      "Kotlin & Flutter Developer"
+      "Software Developer",
+      "Flutter & Android (Kotlin) Developer",
+      "AI-Native Developer"
     ],
-    bio: "I am a Computer Science graduate from Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen passion for AI-native development.",
+    bio: "Computer Science graduate from Sinai University with experience in Android development using Kotlin and Jetpack Compose, plus Flutter for cross-platform apps. Experienced in AI-native development and vibe coding for web and mobile, focused on building modern, scalable, AI-powered software.",
     avatar: "./avatar.jpg",
-    resumeUrl: "#",
+    resumeUrl: "./Youssef_Tamer_CV.pdf",
     stats: [
       { label: "Completed Projects", value: "8+" },
       { label: "Internships Completed", value: "2" },
@@ -22,42 +22,44 @@ const PORTFOLIO_DATA = {
     whatsapp: "https://wa.me/201203598649", // Direct wa.me Egyptian code
     github: "https://github.com/tayson202",
     linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248",
-    location: "ismailia, Egypt"
+    location: "Ismailia, Egypt"
   },
   focus: [
     {
-      title: "Android Development",
+      title: "Android & Kotlin Development",
       desc: "Building native applications using Kotlin, Jetpack Compose, Retrofit, Room Database, and MVVM architecture.",
       icon: "fa-brands fa-android"
     },
     {
-      title: "Cross-Platform Mobile",
+      title: "Flutter & Cross-Platform",
       desc: "Creating high-fidelity, fluid mobile apps for Android and iOS using Flutter and Dart.",
       icon: "fa-solid fa-mobile-screen"
     },
     {
-      title: "AI-Native Development",
-      desc: "Architecting intelligent applications, integrating LLMs, generative AI APIs, and autonomous workflows.",
+      title: "AI-Native & Web Development",
+      desc: "Architecting intelligent applications, integrating LLMs, generative AI APIs, and autonomous vibe-coding workflows.",
       icon: "fa-solid fa-brain"
     }
   ],
   skills: {
-    "Android & Mobile Development": [
-      { name: "Kotlin", level: 90, icon: "fa-brands fa-android" },
-      { name: "Flutter & Dart", level: 82, icon: "fa-solid fa-mobile-screen" },
-      { name: "Jetpack Compose", level: 85, icon: "fa-brands fa-android" },
-      { name: "Java Programming", level: 75, icon: "fa-brands fa-java" }
+    "Mobile & Cross-Platform": [
+      { name: "Kotlin", level: 92, icon: "fa-brands fa-android" },
+      { name: "Flutter", level: 90, icon: "fa-solid fa-mobile-screen" },
+      { name: "Jetpack Compose", level: 88, icon: "fa-brands fa-android" },
+      { name: "Java", level: 80, icon: "fa-brands fa-java" }
     ],
     "Architecture & APIs": [
-      { name: "MVVM Architectural Pattern", level: 88, icon: "fa-solid fa-layer-group" },
-      { name: "Retrofit & REST APIs", level: 85, icon: "fa-solid fa-network-wired" },
-      { name: "Room Database (SQLite)", level: 80, icon: "fa-solid fa-database" },
-      { name: "Dagger Dependency Injection", level: 70, icon: "fa-solid fa-syringe" }
+      { name: "MVVM Architecture", level: 90, icon: "fa-solid fa-layer-group" },
+      { name: "Retrofit", level: 88, icon: "fa-solid fa-network-wired" },
+      { name: "REST APIs", level: 90, icon: "fa-solid fa-cloud" },
+      { name: "Room Database & SQLite", level: 85, icon: "fa-solid fa-database" },
+      { name: "Dagger Dependency Injection", level: 78, icon: "fa-solid fa-syringe" }
     ],
-    "AI & Data Tools": [
-      { name: "Python Programming", level: 85, icon: "fa-brands fa-python" },
-      { name: "LLM & AI APIs Integration", level: 80, icon: "fa-solid fa-brain" },
-      { name: "SQL & Relational Databases", level: 85, icon: "fa-solid fa-database" }
+    "Data Engineering & AI": [
+      { name: "Python", level: 88, icon: "fa-brands fa-python" },
+      { name: "SQL", level: 85, icon: "fa-solid fa-database" },
+      { name: "ETL Pipelines", level: 82, icon: "fa-solid fa-gears" },
+      { name: "AI-Native & LLM APIs", level: 85, icon: "fa-solid fa-brain" }
     ]
   },
   projects: [
@@ -139,7 +141,7 @@ const PORTFOLIO_DATA = {
         "./gymunity_5.jpg"
       ],
       github: "https://github.com/tayson202",
-      live: "#",
+      live: "https://github.com/tayson202",
       tags: ["Flutter", "Dart", "Firebase", "MVVM", "AI Coaching"],
       details: {
         problem: "Fitness apps are often cluttered, overwhelming, and fail to connect users with the right coaches or provide holistic wellness guidance — leading to low engagement and poor habit formation.",
@@ -149,6 +151,36 @@ const PORTFOLIO_DATA = {
     },
     {
       id: 5,
+      title: "Store App — Mobile E-Commerce Application",
+      category: "Android & Mobile Development",
+      description: "E-commerce app for browsing and buying products with catalog search, filtering, and responsive shopping cart.",
+      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?fit=crop&w=600&h=400&q=80",
+      github: "https://github.com/tayson202",
+      live: "https://github.com/tayson202",
+      tags: ["Flutter", "Kotlin", "E-Commerce", "REST APIs", "MVVM"],
+      details: {
+        problem: "Shoppers need an intuitive, lag-free mobile interface to discover products, browse categories, and complete checkout smoothly.",
+        solution: "Engineered a streamlined mobile e-commerce client with dynamic state management, product filtering, instant cart calculations, and REST API integration.",
+        impact: "Provided a smooth browsing and purchasing experience with robust error handling and responsive mobile layouts."
+      }
+    },
+    {
+      id: 6,
+      title: "Delivery App — Order & Tracking Platform",
+      category: "Android & Mobile Development",
+      description: "App for ordering and tracking deliveries in real-time, featuring dispatch status, tracking, and order history.",
+      image: "https://images.unsplash.com/photo-1526367790999-0150786686a2?fit=crop&w=600&h=400&q=80",
+      github: "https://github.com/tayson202",
+      live: "https://github.com/tayson202",
+      tags: ["Mobile", "Delivery Tracking", "REST APIs", "Kotlin", "MVVM"],
+      details: {
+        problem: "Users and couriers require transparent, real-time status updates and reliable order dispatching without communication friction.",
+        solution: "Implemented live dispatch tracking, interactive status timelines, and optimized network polling for package locations.",
+        impact: "Streamlined order-to-delivery communication with clean mobile UI and reliable tracking."
+      }
+    },
+    {
+      id: 7,
       title: "News App",
       category: "Android & Mobile Development",
       description: "A modern news application featuring offline local caching, clean MVVM separation, and asynchronous networking.",
@@ -163,13 +195,13 @@ const PORTFOLIO_DATA = {
       }
     },
     {
-      id: 6,
+      id: 8,
       title: "Media Capture & Playback App",
       category: "Android & Mobile Development",
       description: "A hardware-integrated application allowing recording, saving, and smooth audio/video multimedia playback.",
       image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?fit=crop&w=600&h=400&q=80",
       github: "https://github.com/tayson202",
-      live: "#",
+      live: "https://github.com/tayson202",
       tags: ["Kotlin", "Media Recorder API", "Android SDK"],
       details: {
         problem: "Capturing high-resolution media asynchronously can cause buffer overflows and main-thread delays on budget devices.",
@@ -179,14 +211,16 @@ const PORTFOLIO_DATA = {
     }
   ],
   tools: [
+    { name: "Kotlin & Jetpack", category: "Mobile Core", icon: "fa-brands fa-android" },
+    { name: "Flutter & Dart", category: "Cross-Platform", icon: "fa-solid fa-mobile-screen" },
     { name: "Android Studio", category: "IDE / Editor", icon: "fa-brands fa-android" },
     { name: "VS Code", category: "Code Editor", icon: "fa-solid fa-code" },
     { name: "Git & GitHub", category: "Version Control", icon: "fa-brands fa-git-alt" },
     { name: "Python Scripting", category: "Language Core", icon: "fa-brands fa-python" },
     { name: "SQL & Room Database", category: "Database Suite", icon: "fa-solid fa-database" },
     { name: "ETL Processing Tools", category: "Data pipeline", icon: "fa-solid fa-gears" },
-    { name: "Dagger & Injection", category: "Framework Support", icon: "fa-solid fa-syringe" },
-    { name: "Retrofit APIs", category: "Network Layer", icon: "fa-solid fa-network-wired" }
+    { name: "Retrofit & REST APIs", category: "Network Layer", icon: "fa-solid fa-network-wired" },
+    { name: "MVVM & Dagger", category: "Architecture", icon: "fa-solid fa-layer-group" }
   ],
   experience: [
     {
@@ -194,7 +228,7 @@ const PORTFOLIO_DATA = {
       role: "Android Developer Intern",
       company: "DEPI",
       period: "11/2024 - 05/2025",
-      description: "Developed a News App using Kotlin and Jetpack Compose. Integrated Retrofit and Room Database. Managed dependencies using Dagger and implemented clean MVVM separation patterns."
+      description: "Developed a News App using Kotlin and Jetpack Compose. Integrated Retrofit and Room Database. Managed dependencies using Dagger and implemented clean MVVM architecture."
     },
     {
       type: "work",
@@ -208,14 +242,24 @@ const PORTFOLIO_DATA = {
       role: "Bachelor of Computer Science",
       company: "Sinai University",
       period: "09/2022 - 06/2026",
-      description: "Focusing on Software Engineering, mobile architectures, database interfaces, and algorithms."
+      description: "Focusing on Software Engineering, mobile application architectures, database interfaces, and algorithms."
     }
   ],
   certifications: [
     { name: "Data Engineering Track", issuer: "DataCamp" },
     { name: "Flutter Development Course", issuer: "Udemy" },
     { name: "DEPI Mobile Development Program", issuer: "DEPI" }
-  ]
+  ],
+  languages: [
+    { name: "Arabic", level: "Native" },
+    { name: "English", level: "Advanced" }
+  ],
+  keyAchievements: [
+    { title: "DBLKK Website", url: "https://dblkk-eg.vercel.app/", label: "View Website" },
+    { title: "OmniDoc Website", url: "https://tayson202.github.io/pdf-assist/", label: "View Website" },
+    { title: "3M Dahab Website", url: "https://jewelry-management-system-backend.vercel.app", label: "View Website" }
+  ],
+  interests: "Programming and Development"
 };
 
 // Export configuration globally

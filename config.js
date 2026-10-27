@@ -3,21 +3,19 @@ const PORTFOLIO_CONFIG = {
   profile: {
     name: "Youssef Tamer",
     roles: [
-      "AI-Native Developer",
-      "Android Developer",
-      "Kotlin & Flutter Developer"
+      "Software Developer",
+      "Flutter & Android (Kotlin) Developer",
+      "AI-Native Developer"
     ],
-    subheading: "I thrive on building scalable mobile applications and have a keen passion for AI-Native Development.",
-    bio: "I am a Computer Science graduate from Sinai University with practical experience in Android Development using Kotlin and Jetpack Compose. I thrive on building scalable mobile applications and have a keen passion for AI-Native Development.",
+    subheading: "Computer Science graduate from Sinai University focused on building modern, scalable, AI-powered software.",
+    bio: "Computer Science graduate from Sinai University with experience in Android development using Kotlin and Jetpack Compose, plus Flutter for cross-platform apps. Experienced in AI-native development and vibe coding for web and mobile, focused on building modern, scalable, AI-powered software.",
     avatar: "./avatar.jpg",
-    location: "Sinai, Egypt",
+    location: "Ismailia, Egypt",
     email: "yousseftamer951@gmail.com",
-    resume: "#",
+    resume: "./Youssef_Tamer_CV.pdf",
     socials: {
       github: "https://github.com/tayson202",
-      linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248",
-      twitter: "https://twitter.com",
-      dribbble: "https://dribbble.com"
+      linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248"
     }
   },
   stats: [
