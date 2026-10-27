@@ -11,7 +11,7 @@ const PORTFOLIO_DATA = {
     avatar: "./avatar.jpg",
     resumeUrl: "#",
     stats: [
-      { label: "Completed Projects", value: "7+" },
+      { label: "Completed Projects", value: "8+" },
       { label: "Internships Completed", value: "2" },
       { label: "Languages Spoken", value: "2" }
     ]
@@ -85,21 +85,48 @@ const PORTFOLIO_DATA = {
     },
     {
       id: 2,
-      title: "News App",
-      category: "Android & Mobile Development",
-      description: "A modern news application featuring offline local caching, clean MVVM separation, and asynchronous networking.",
-      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?fit=crop&w=600&h=400&q=80",
+      title: "3M DAHAB OS — Gold & Jewelry Enterprise ERP & Live Bullion Exchange",
+      category: "Web Development",
+      description: "A mission-critical gold bullion arbitrage, jewelry atelier management & real-time Sagha exchange platform. Features live Egyptian market price synchronization via Daleelak API, multi-karat cascade pricing (24K, 22K, 21K, 18K, 14K, 12K), atelier manufacturing fee ('Masnaeya') & profit floor enforcement, digital vault valuation, POS cashier counter with automated COGS, and Root Clearance Level 3 administrative governance.",
+      image: "./dahab_4.png",
+      images: [
+        "./dahab_4.png",
+        "./dahab_1.png",
+        "./dahab_2.png",
+        "./dahab_3.png"
+      ],
       github: "https://github.com/tayson202",
-      live: "https://github.com/tayson202",
-      tags: ["Kotlin", "Jetpack Compose", "Room DB", "Retrofit"],
+      live: "https://jewelry-management-system-backend.vercel.app",
+      tags: ["React", "Node.js", "Vercel", "WebSockets", "Financial ERP", "Real-Time APIs", "Tailwind CSS"],
       details: {
-        problem: "Users needed a reliable news feed that retains articles offline and loads feeds dynamically without UI freezes on sluggish networks.",
-        solution: "Configured Room Database as an offline cache. Hooked Retrofit for API retrieval, built with Dagger dependencies, and designed under MVVM structure.",
-        impact: "Successfully developed and deployed the app, eliminating background thread freezes and improving user retention when offline."
+        problem: "Egyptian gold retailers and atelier workshops grapple with rapid currency and bullion fluctuations, manual karat conversions, intricate atelier manufacturing charges ('Masnaeya'), and inventory shrinkage risks across physical vaults, cashier POS counters, and wholesale clearinghouses.",
+        solution: "Architected 3M DAHAB OS: an end-to-end bullion ERP and live exchange engine. Integrates automated Sagha desk market feeds via the Daleelak API to instantly cascade spot 24K ingot prices across 22K, 21K, 18K, 14K, and 12K buy/sell standards. Implemented atelier profit floors, hydrostatic assay audit checks, POS cashier counter transactions, and executive Root Clearance Level 3 governance with tamper-resistant audit trails.",
+        impact: "Delivered a real-time web platform deployed on Vercel with sub-second price propagation, automated COGS accounting, bilingual (Arabic RTL / English) executive command workflows, and enterprise-grade vault security for jewelry retail stores and workshops."
       }
     },
     {
-      id: 2,
+      id: 3,
+      title: "DBLKK — Egyptian Streetwear Platform",
+      category: "Web Development",
+      description: "A premium Egyptian fashion & athletic lifestyle brand platform. Built with Next.js featuring a full e-commerce store, run community events (Four Fridays Tour), gym gear section, and dark-mode UI with burgundy branding.",
+      image: "./dblkk_1.png",
+      images: [
+        "./dblkk_1.png",
+        "./dblkk_2.png",
+        "./dblkk_3.png",
+        "./dblkk_4.png"
+      ],
+      github: "https://github.com/tayson202",
+      live: "https://dblkk-eg.vercel.app/",
+      tags: ["Next.js", "React", "Tailwind CSS", "Vercel", "E-Commerce"],
+      details: {
+        problem: "DBLKK needed a high-performance, brand-forward web platform that could serve both as a premium e-commerce store for Egyptian streetwear and as a community hub for their Four Fridays run club events.",
+        solution: "Built a full-stack Next.js platform with dark/light theme support, animated hero sections, a product store (DROP 01), community events calendar, gym gear section, COD checkout, and order tracking — all deployed on Vercel.",
+        impact: "Delivered a premium, mobile-first storefront and community platform that elevated the DBLKK brand identity online, supporting product launches, run club registrations, and athletic community growth across Cairo, Alexandria, and Ismailia."
+      }
+    },
+    {
+      id: 4,
       title: "Gym Unity — Fitness & Wellness Platform",
       category: "Android & Mobile Development",
       description: "A comprehensive Flutter fitness platform featuring a Coach Marketplace, AI-powered TAIYO coaching assistant, in-app product store, nutrition tracking, weekly check-ins, and progress mapping — all wrapped in a premium minimal UI.",
@@ -121,7 +148,22 @@ const PORTFOLIO_DATA = {
       }
     },
     {
-      id: 3,
+      id: 5,
+      title: "News App",
+      category: "Android & Mobile Development",
+      description: "A modern news application featuring offline local caching, clean MVVM separation, and asynchronous networking.",
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?fit=crop&w=600&h=400&q=80",
+      github: "https://github.com/tayson202",
+      live: "https://github.com/tayson202",
+      tags: ["Kotlin", "Jetpack Compose", "Room DB", "Retrofit"],
+      details: {
+        problem: "Users needed a reliable news feed that retains articles offline and loads feeds dynamically without UI freezes on sluggish networks.",
+        solution: "Configured Room Database as an offline cache. Hooked Retrofit for API retrieval, built with Dagger dependencies, and designed under MVVM structure.",
+        impact: "Successfully developed and deployed the app, eliminating background thread freezes and improving user retention when offline."
+      }
+    },
+    {
+      id: 6,
       title: "Media Capture & Playback App",
       category: "Android & Mobile Development",
       description: "A hardware-integrated application allowing recording, saving, and smooth audio/video multimedia playback.",
@@ -133,27 +175,6 @@ const PORTFOLIO_DATA = {
         problem: "Capturing high-resolution media asynchronously can cause buffer overflows and main-thread delays on budget devices.",
         solution: "Engineered audio and video recorder configurations that output compressed file payloads and run on background worker threads.",
         impact: "Integrated safe record and play routines, preventing frame-drop anomalies and eliminating system block crashes."
-      }
-    },
-    {
-      id: 4,
-      title: "DBLKK — Egyptian Streetwear Platform",
-      category: "Web Development",
-      description: "A premium Egyptian fashion & athletic lifestyle brand platform. Built with Next.js featuring a full e-commerce store, run community events (Four Fridays Tour), gym gear section, and dark-mode UI with burgundy branding.",
-      image: "./dblkk_1.png",
-      images: [
-        "./dblkk_1.png",
-        "./dblkk_2.png",
-        "./dblkk_3.png",
-        "./dblkk_4.png"
-      ],
-      github: "https://github.com/tayson202",
-      live: "https://dblkk-eg.vercel.app/",
-      tags: ["Next.js", "React", "Tailwind CSS", "Vercel", "E-Commerce"],
-      details: {
-        problem: "DBLKK needed a high-performance, brand-forward web platform that could serve both as a premium e-commerce store for Egyptian streetwear and as a community hub for their Four Fridays run club events.",
-        solution: "Built a full-stack Next.js platform with dark/light theme support, animated hero sections, a product store (DROP 01), community events calendar, gym gear section, COD checkout, and order tracking — all deployed on Vercel.",
-        impact: "Delivered a premium, mobile-first storefront and community platform that elevated the DBLKK brand identity online, supporting product launches, run club registrations, and athletic community growth across Cairo, Alexandria, and Ismailia."
       }
     }
   ],

@@ -48,6 +48,16 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: 2,
+      title: "3M DAHAB OS — Gold & Jewelry Enterprise ERP & Live Bullion Exchange",
+      description: "A mission-critical gold bullion arbitrage, jewelry atelier management & real-time Sagha exchange platform with live Daleelak API synchronization, multi-karat cascade pricing, and POS counters.",
+      category: "Web Development",
+      tags: ["React", "Node.js", "Vercel", "WebSockets", "Financial ERP", "Tailwind CSS"],
+      image: "./dahab_4.png",
+      demoUrl: "https://jewelry-management-system-backend.vercel.app",
+      githubUrl: "https://github.com/tayson202"
+    },
+    {
+      id: 2,
       title: "Aetherial E-Commerce Portal",
       description: "An immersive digital storefront featuring dynamic 3D-like hover product previews, rapid checkout flow, and custom micro-animations.",
       category: "Design",
