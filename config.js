@@ -15,7 +15,7 @@ const PORTFOLIO_CONFIG = {
     resume: "./Youssef_Tamer_CV.pdf",
     socials: {
       github: "https://github.com/tayson202",
-      linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248"
+      linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248/"
     }
   },
   stats: [

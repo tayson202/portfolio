@@ -21,7 +21,7 @@ const PORTFOLIO_DATA = {
     phone: "01203598649",
     whatsapp: "https://wa.me/201203598649", // Direct wa.me Egyptian code
     github: "https://github.com/tayson202",
-    linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248",
+    linkedin: "https://www.linkedin.com/in/youssef-tamer-169827248/",
     location: "Ismailia, Egypt"
   },
   focus: [
