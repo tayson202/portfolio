@@ -129,29 +129,20 @@
       color: var(--primary);
       text-decoration: none;
       font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 3.5px;
     }
 
     .cv-contact a:hover {
       text-decoration: underline;
     }
 
-    .cv-contact i {
-      font-size: 11px;
-      margin-right: 2px;
-      color: var(--text-dark);
-    }
-
-    .cv-icon {
+    .cv-icon-img {
+      width: 11.5px;
+      height: 11.5px;
+      vertical-align: -1px;
       display: inline-block;
-      vertical-align: -1.5px;
-      margin-right: 4px;
-      color: var(--text-dark);
-    }
-
-    .contact-link-wrapper {
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
     }
 
     /* Two-Column Grid */
@@ -381,7 +372,7 @@
     <button class="action-btn btn-primary" onclick="window.print()">
       <i class="fa-solid fa-print"></i> Print / Save as PDF
     </button>
-    <a href="Youssef_Tamer_CV.pdf" class="action-btn btn-primary" download="Youssef_Tamer_CV.pdf">
+    <a href="Youssef_Tamer_CV.pdf?v=20261102" class="action-btn btn-primary" download="Youssef_Tamer_CV.pdf">
       <i class="fa-solid fa-download"></i> Download PDF
     </a>
     <a href="index.html" class="action-btn btn-secondary">
@@ -395,15 +386,15 @@
       <h1 class="cv-name">Youssef Tamer</h1>
       <div class="cv-subtitle">Software Developer | Flutter & Android (Kotlin) | AI Native</div>
       <div class="cv-contact">
-        <span><svg class="cv-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:01203598649" style="color: inherit; text-decoration: none;">01203598649</a></span>
+        <a href="tel:01203598649" style="color: inherit; text-decoration: none;"><img class="cv-icon-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23111827" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>' alt="Phone"> 01203598649</a>
         <span class="sep">|</span>
-        <span><svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><a href="mailto:yousseftamer951@gmail.com" style="color: inherit; text-decoration: none;">yousseftamer951@gmail.com</a></span>
+        <a href="mailto:yousseftamer951@gmail.com" style="color: inherit; text-decoration: none;"><img class="cv-icon-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23111827" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>' alt="Email"> yousseftamer951@gmail.com</a>
         <span class="sep">|</span>
-        <span class="contact-link-wrapper" onclick="window.open('https://www.linkedin.com/in/youssef-tamer-169827248/', '_blank')"><svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg><a href="https://www.linkedin.com/in/youssef-tamer-169827248/" id="cv-linkedin-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+        <a href="https://www.linkedin.com/in/youssef-tamer-169827248/" id="cv-linkedin-link" target="_blank" rel="noopener noreferrer"><img class="cv-icon-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23111827" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>' alt="LinkedIn"> LinkedIn</a>
         <span class="sep">|</span>
-        <span class="contact-link-wrapper" onclick="window.open('https://tayson202.github.io/portfolio/', '_blank')"><svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg><a href="https://tayson202.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a></span>
+        <a href="https://tayson202.github.io/portfolio/" target="_blank" rel="noopener noreferrer"><img class="cv-icon-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23111827" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>' alt="Portfolio"> Portfolio</a>
         <span class="sep">|</span>
-        <span class="contact-link-wrapper" onclick="window.open('https://github.com/tayson202', '_blank')"><svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><a href="https://github.com/tayson202" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+        <a href="https://github.com/tayson202" target="_blank" rel="noopener noreferrer"><img class="cv-icon-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23111827" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>' alt="GitHub"> GitHub</a>
       </div>
     </header>
 
