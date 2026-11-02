@@ -36,6 +36,16 @@ const PORTFOLIO_CONFIG = {
   projects: [
     {
       id: 1,
+      title: "ULearn — Modern Educational Marketplace & AI Platform",
+      description: "An all-in-one educational marketplace connecting teachers, students, and academies with AI learning tools, interactive curricula, and multi-role studio dashboards.",
+      category: "AI & Web",
+      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "AI Learning", "Vercel"],
+      image: "./ulearn_1.png",
+      demoUrl: "https://ul-theta.vercel.app",
+      githubUrl: "https://github.com/tayson202"
+    },
+    {
+      id: 2,
       title: "OmniDoc & Resume AI — Universal AI Document & Career Studio",
       description: "Universal AI-powered document workspace for PDF, Word, Excel, and PowerPoint, featuring interactive RAG AI Chat with page citations, automated summaries, AI study suite, and ATS resume studio.",
       category: "AI & Web",

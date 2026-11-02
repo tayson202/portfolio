@@ -11,7 +11,7 @@ const PORTFOLIO_DATA = {
     avatar: "./avatar.jpg",
     resumeUrl: "./Youssef_Tamer_CV.pdf",
     stats: [
-      { label: "Completed Projects", value: "8+" },
+      { label: "Completed Projects", value: "9+" },
       { label: "Internships Completed", value: "2" },
       { label: "Languages Spoken", value: "2" }
     ]
@@ -65,6 +65,27 @@ const PORTFOLIO_DATA = {
   projects: [
     {
       id: 1,
+      title: "ULearn — Modern Educational Marketplace & AI Platform",
+      category: "AI & Web Development",
+      description: "An all-in-one commercial educational marketplace connecting independent teachers, students, and academies. Features multi-role cryptographic authentication (Student, Teacher, Academy, Admin), interactive course catalog, Teacher Studio, institutional academy faculty rosters, live masterclasses, and a grounded AI personal tutor.",
+      image: "./ulearn_1.png",
+      images: [
+        "./ulearn_1.png",
+        "./ulearn_2.png",
+        "./ulearn_3.png",
+        "./ulearn_4.png"
+      ],
+      github: "https://github.com/tayson202",
+      live: "https://ul-theta.vercel.app",
+      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "AI Learning", "Vercel", "EdTech"],
+      details: {
+        problem: "Educational ecosystems are fragmented: students juggle disparate platforms for courses, live classes, and tutoring, while independent teachers and academies lack unified studio hubs with multi-role access controls and transparent faculty syndication.",
+        solution: "Architected ULearn: an end-to-end commercial educational marketplace and AI platform built on Next.js, TypeScript, and Tailwind CSS. Features multi-persona cryptographic authentication (Student, Teacher, Academy, Admin), course discovery with interactive video and quiz curricula, Teacher Studio for authoring courses and live classes, an institutional academy directory for faculty appointments, and a grounded AI personal tutor.",
+        impact: "Delivered a production-ready, dark/light responsive web platform deployed on Vercel with role-tailored dashboards (Member Workspace, Seller Studio, Coach Portal, Brand Dashboard), sub-second page transitions, and enterprise trust & safety governance."
+      }
+    },
+    {
+      id: 2,
       title: "OmniDoc & Resume AI — Universal AI Document & Career Studio",
       category: "AI & Web Development",
       description: "An enterprise-grade AI document intelligence & career platform. Features multi-format parsing (PDF, Word, Excel, PPT), interactive RAG AI Chat with verified page citations, automated multi-level document summarization, AI Study Suite (3D flashcards, quizzes & Feynman explainer), 10+ language neural translation, and an ATS-optimized resume builder with 1-click export.",
@@ -255,6 +276,7 @@ const PORTFOLIO_DATA = {
     { name: "English", level: "Advanced" }
   ],
   keyAchievements: [
+    { title: "ULearn Marketplace", url: "https://ul-theta.vercel.app", label: "View Website" },
     { title: "DBLKK Website", url: "https://dblkk-eg.vercel.app/", label: "View Website" },
     { title: "OmniDoc Website", url: "https://tayson202.github.io/pdf-assist/", label: "View Website" },
     { title: "3M Dahab Website", url: "https://jewelry-management-system-backend.vercel.app", label: "View Website" }
